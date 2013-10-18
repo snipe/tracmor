@@ -17,6 +17,10 @@
 	this database,  execute first the "create" and then "data" SQL script from the 
 	tracmor/data_model directory.
 	
+	Some functionality within Tracmor adds columns on the fly (for example, custom fields). 
+	Be sure the MySQL user you create and associate with this application  
+	has SELECT, UPDATE, DELETE, INSERT, and ALTER privileges. 
+	
 ////////////////////////////////////////////
 // STEP THREE - UPDATE configuration.inc.php
 ////////////////////////////////////////////
