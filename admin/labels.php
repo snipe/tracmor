@@ -270,7 +270,7 @@
 
       // Delete temporary images
       for ($i = 1; $i <= $this->intCurrentBarCodeLabel; $i++) {
-        @unlink(".." . __TRACMOR_TMP__ . "/".$_SESSION['intUserAccountId']."_".$i.".png");
+        @unlink(__TRACMOR_TMP__ . "/".$_SESSION['intUserAccountId']."_".$i.".png");
       }
       // Reset variables
       $this->intCurrentBarCodeLabel = 0;

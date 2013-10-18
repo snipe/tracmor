@@ -16,7 +16,7 @@
 		case 'test':
 		case 'stage':
 		case 'prod':
-			define ('__DOCROOT__', '/var/www/tracmor');
+			define ('__DOCROOT__', $_SERVER['DOCUMENT_ROOT']);
 			define ('__VIRTUAL_DIRECTORY__', '');
 			define ('__SUBDIRECTORY__', '');
 
@@ -25,8 +25,8 @@
 				'server' => 'localhost',
 				'port' => null,
 				'database' => 'tracmor',
-				'username' => '',
-				'password' => '',
+				'username' => 'tracmor',
+				'password' => 'tracmor',
 				'profiling' => false,
 				'encoding' => 'utf8')));
 			break;
